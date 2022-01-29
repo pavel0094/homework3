@@ -1,0 +1,79 @@
+/* селектор тэга */
+nav {
+   color: aquamarine;
+}
+/* селектор класса */
+main {
+   color: red;
+}
+/* селектор id */
+#starthistory {
+   color: blueviolet;
+}
+
+/* использовали три вида селекторов */
+
+/* приоритет */
+
+.footer {
+   color: chartreuse;
+}
+.footer {
+   color: orange;
+}
+/* последний в записи имеет приоритет */
+
+footer {
+   color: grey;
+}
+/* футер остался оранжевым, т. к. селектор класса имеет приоритет над селектором тэга. Cелектор id самый приоритетный  */
+
+#english {
+   color: greenyellow;
+}
+
+/* уточнение приоретнее */
+
+p.text {
+   color: midnightblue;
+}
+/* все теги p c классом text приорететнее чем все объекты с классом  */
+.text {
+   color: olive;
+}
+
+.text.chapter {
+   color: yellow;
+}
+
+p span {
+   color: green;
+}
+
+/* перечисление */
+.dark,
+.darkspan {
+   color: palegreen;
+}
+
+/*  */
+
+.block > p {
+   color: turquoise;
+}
+
+.block li {
+   color: seagreen;
+}
+
+.block2 h2 {
+   color: rgb(177, 23, 23);
+}
+
+.block2 h2 {
+   color: springgreen;
+}
+
+.block2 > h2 {
+   color: red;
+}
