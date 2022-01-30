@@ -11,6 +11,10 @@ main {
    color: blueviolet;
 }
 
+#html5 {
+   color: yellow;
+}
+
 /* использовали три вида селекторов */
 
 /* приоритет */
@@ -37,7 +41,7 @@ footer {
 p.text {
    color: midnightblue;
 }
-/* все теги p c классом text приорететнее чем все объекты с классом  */
+/* все теги p c классом text - приорететнее чем все объекты с классом  */
 .text {
    color: olive;
 }
@@ -56,24 +60,21 @@ p span {
    color: palegreen;
 }
 
-/*  */
-
-.block > p {
-   color: turquoise;
+/* используем селектор атрибута */
+[class*="__block2"]{
+   color: royalblue;
 }
 
-.block li {
-   color: seagreen;
+/* вложенность */
+/* комплексные селекторы */
+.block3 > p {
+   color: yellowgreen;
+}
+.vlogtext ~ p {
+   color: thistle;
 }
 
-.block2 h2 {
-   color: rgb(177, 23, 23);
+.vlogtext + p {
+   color: rgb(160, 96, 13);
 }
 
-.block2 h2 {
-   color: springgreen;
-}
-
-.block2 > h2 {
-   color: red;
-}
